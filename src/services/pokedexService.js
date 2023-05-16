@@ -6,7 +6,7 @@ const getPokemon = async (id) => {
         .get(apiUrl)
         .then(
             function (response) {
-                // Add your solution here!
+                return response.data
             }
         );
 
