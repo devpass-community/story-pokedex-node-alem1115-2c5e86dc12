@@ -6,7 +6,11 @@ const getPokemon = async (id) => {
         .get(apiUrl)
         .then(
             function (response) {
-                return response.data
+                try {
+                    return response.data
+                } catch {
+                    console.log(error)
+                }
             }
         );
 
